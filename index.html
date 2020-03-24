@@ -15,19 +15,25 @@
 <body>
     <h1>正文</h1>
     <div class="a">
-    <img src="images/1.jpg" alt="1">
+        <img src="images/1.jpg" alt="1">
         <h1>study github</h1>
         <li>1</li>
         <li>2</li>
         <li>3</li>
     </div>
-<script type="text/javascript">
-$(document).ready(function(){
-    $(".a").click(function(){
-        alert("woc!");
-    })
-})
-</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".a").click(function () {
+                alert("woc!");
+                $(".a").mouseover(function () {
+                    $(this).css("background-color", "#0060ff");
+                });
+                $(".a").mouseout(function () {
+                    $(this).css("background-color", "#cb4f51");
+                });
+            })
+        })
+    </script>
 </body>
 
 </html>
