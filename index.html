@@ -10,19 +10,24 @@
     </style>
     <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <title>标题</title>
+</head>
+
+<body>
+    <h1>正文</h1>
     <div class="a">
+    <img src="images/1.jpg" alt="1">
         <h1>study github</h1>
         <li>1</li>
         <li>2</li>
         <li>3</li>
     </div>
-
-    <img src="images/1.jpg" alt="1">
-
-</head>
-
-<body>
-
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".a").click(function(){
+        alert("woc");
+    })
+})
+</script>
 </body>
 
 </html>
